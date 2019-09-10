@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="canvas">
+      <nav>
+        <div class="nav-wrapper green">
+          <a href="#" class="brand-logo"></a>
+        </div>
+      </nav>
+      <div class="container">
+        <h1 class="header">Image classifier</h1>
+        <br />
+        <div class="col s12 m7">
+          <div class="card ">
+            <div class="card-content">
+              <video class="center"
+                autoplay
+                playsinline
+                muted
+                id="webcam"
+                width="224"
+                height="224"
+              >
+            </video>
+              <div id="console"></div>
+              <div id="separator-2">
+              </div>
+              <div class="center">
+              <button id="class-a" class="btn">Add A</button>
+              <button id="class-b" class="btn">Add B</button>
+              <button id="class-c" class="btn">Add C</button>
+              <button id="class-d" class="btn">Add D</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
