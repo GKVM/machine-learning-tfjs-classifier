@@ -25,7 +25,7 @@ function setupWebcam() {
 
 async function app() {
   console.log("Loading mobilenet..");
-  document.getElementById("messages").innerText = `Downloading MobileNet model`;
+  document.getElementById("messages").innerText = `Downloading MobileNet model...`;
   // Load the model.
   net = await mobilenet.load();
   document.getElementById("messages").innerText = ``;
